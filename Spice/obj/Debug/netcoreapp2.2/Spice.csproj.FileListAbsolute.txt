@@ -67,3 +67,8 @@ C:\Projects\Spice\Spice\obj\Debug\netcoreapp2.2\Razor\Areas\Identity\Pages\Accou
 C:\Projects\Spice\Spice\obj\Debug\netcoreapp2.2\Razor\Areas\Identity\Pages\Error.g.cshtml.cs
 C:\Projects\Spice\Spice\obj\Debug\netcoreapp2.2\Razor\Areas\Identity\Pages\_ValidationScriptsPartial.g.cshtml.cs
 C:\Projects\Spice\Spice\obj\Debug\netcoreapp2.2\Razor\Areas\Identity\Pages\_ViewImports.g.cshtml.cs
+C:\Projects\Spice\Spice\obj\Debug\netcoreapp2.2\Razor\Areas\Admin\Views\Category\Index.g.cshtml.cs
+C:\Projects\Spice\Spice\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_CreateButtonPartial.g.cshtml.cs
+C:\Projects\Spice\Spice\obj\Debug\netcoreapp2.2\Razor\Areas\Admin\Views\Category\Create.g.cshtml.cs
+C:\Projects\Spice\Spice\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_CreateAndBackToListButton.g.cshtml.cs
+C:\Projects\Spice\Spice\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_TableButtonPartial.g.cshtml.cs
