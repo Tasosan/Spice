@@ -78,3 +78,6 @@ C:\Projects\Spice\Spice\obj\Debug\netcoreapp2.2\Razor\Areas\Admin\Views\Category
 C:\Projects\Spice\Spice\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_DeleteAndBackToListButton.g.cshtml.cs
 C:\Projects\Spice\Spice\obj\Debug\netcoreapp2.2\Razor\Areas\Admin\Views\Category\Details.g.cshtml.cs
 C:\Projects\Spice\Spice\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_DetailsAndBackToListButton.g.cshtml.cs
+C:\Projects\Spice\Spice\obj\Debug\netcoreapp2.2\Razor\Areas\Admin\Views\SubCategory\Index.g.cshtml.cs
+C:\Projects\Spice\Spice\obj\Debug\netcoreapp2.2\Razor\Areas\Admin\Views\SubCategory\Create.g.cshtml.cs
+C:\Projects\Spice\Spice\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_StatusMessage.g.cshtml.cs
