@@ -84,3 +84,8 @@ C:\Projects\Spice\Spice\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_StatusMessag
 C:\Projects\Spice\Spice\obj\Debug\netcoreapp2.2\Razor\Areas\Admin\Views\SubCategory\Edit.g.cshtml.cs
 C:\Projects\Spice\Spice\obj\Debug\netcoreapp2.2\Razor\Areas\Admin\Views\SubCategory\Details.g.cshtml.cs
 C:\Projects\Spice\Spice\obj\Debug\netcoreapp2.2\Razor\Areas\Admin\Views\SubCategory\Delete.g.cshtml.cs
+C:\Projects\Spice\Spice\obj\Debug\netcoreapp2.2\Razor\Areas\Admin\Views\MenuItem\Index.g.cshtml.cs
+C:\Projects\Spice\Spice\obj\Debug\netcoreapp2.2\Razor\Areas\Admin\Views\MenuItem\Create.g.cshtml.cs
+C:\Projects\Spice\Spice\obj\Debug\netcoreapp2.2\Razor\Areas\Admin\Views\MenuItem\Edit.g.cshtml.cs
+C:\Projects\Spice\Spice\obj\Debug\netcoreapp2.2\Razor\Areas\Admin\Views\MenuItem\Details.g.cshtml.cs
+C:\Projects\Spice\Spice\obj\Debug\netcoreapp2.2\Razor\Areas\Admin\Views\MenuItem\Delete.g.cshtml.cs
