@@ -95,3 +95,4 @@ C:\Projects\Spice\Spice\obj\Debug\netcoreapp2.2\Razor\Areas\Admin\Views\Coupon\E
 C:\Projects\Spice\Spice\obj\Debug\netcoreapp2.2\Razor\Areas\Admin\Views\Coupon\Details.g.cshtml.cs
 C:\Projects\Spice\Spice\obj\Debug\netcoreapp2.2\Razor\Areas\Admin\Views\Coupon\Delete.g.cshtml.cs
 C:\Projects\Spice\Spice\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_ThumbnailAreaPArtial.g.cshtml.cs
+C:\Projects\Spice\Spice\obj\Debug\netcoreapp2.2\Razor\Areas\Admin\Views\User\Index.g.cshtml.cs
