@@ -89,3 +89,8 @@ C:\Projects\Spice\Spice\obj\Debug\netcoreapp2.2\Razor\Areas\Admin\Views\MenuItem
 C:\Projects\Spice\Spice\obj\Debug\netcoreapp2.2\Razor\Areas\Admin\Views\MenuItem\Edit.g.cshtml.cs
 C:\Projects\Spice\Spice\obj\Debug\netcoreapp2.2\Razor\Areas\Admin\Views\MenuItem\Details.g.cshtml.cs
 C:\Projects\Spice\Spice\obj\Debug\netcoreapp2.2\Razor\Areas\Admin\Views\MenuItem\Delete.g.cshtml.cs
+C:\Projects\Spice\Spice\obj\Debug\netcoreapp2.2\Razor\Areas\Admin\Views\Coupon\Index.g.cshtml.cs
+C:\Projects\Spice\Spice\obj\Debug\netcoreapp2.2\Razor\Areas\Admin\Views\Coupon\Create.g.cshtml.cs
+C:\Projects\Spice\Spice\obj\Debug\netcoreapp2.2\Razor\Areas\Admin\Views\Coupon\Edit.g.cshtml.cs
+C:\Projects\Spice\Spice\obj\Debug\netcoreapp2.2\Razor\Areas\Admin\Views\Coupon\Details.g.cshtml.cs
+C:\Projects\Spice\Spice\obj\Debug\netcoreapp2.2\Razor\Areas\Admin\Views\Coupon\Delete.g.cshtml.cs
