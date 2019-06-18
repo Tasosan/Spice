@@ -99,3 +99,5 @@ C:\Projects\Spice\Spice\obj\Debug\netcoreapp2.2\Spice.Views.pdb
 C:\Projects\Spice\Spice\obj\Debug\netcoreapp2.2\Spice.dll
 C:\Projects\Spice\Spice\obj\Debug\netcoreapp2.2\Spice.pdb
 C:\Projects\Spice\Spice\obj\Debug\netcoreapp2.2\Spice.csproj.CopyComplete
+C:\Projects\Spice\Spice\obj\Debug\netcoreapp2.2\Razor\Areas\Customer\Views\Order\Confirm.g.cshtml.cs
+C:\Projects\Spice\Spice\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_IndividualOrderDetails.g.cshtml.cs
