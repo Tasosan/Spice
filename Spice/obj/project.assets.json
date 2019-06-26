@@ -3121,6 +3121,18 @@
           }
         }
       },
+      "Sendgrid/9.11.0": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "9.0.1"
+        },
+        "compile": {
+          "lib/netstandard2.0/SendGrid.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/SendGrid.dll": {}
+        }
+      },
       "Stripe.net/25.19.0": {
         "type": "package",
         "dependencies": {
@@ -8402,6 +8414,26 @@
         "version.txt"
       ]
     },
+    "Sendgrid/9.11.0": {
+      "sha512": "I3VdLmsDbqazS5k8OsMAuKvnZz3YruNQxOACfVMDdrM5jjlQE/jOoaNJXcZEG+49TbanCVvOldE56pbKxdiVGA==",
+      "type": "package",
+      "path": "sendgrid/9.11.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net452/SendGrid.dll",
+        "lib/net452/SendGrid.pdb",
+        "lib/net452/SendGrid.xml",
+        "lib/netstandard1.3/SendGrid.dll",
+        "lib/netstandard1.3/SendGrid.pdb",
+        "lib/netstandard1.3/SendGrid.xml",
+        "lib/netstandard2.0/SendGrid.dll",
+        "lib/netstandard2.0/SendGrid.pdb",
+        "lib/netstandard2.0/SendGrid.xml",
+        "sendgrid.9.11.0.nupkg.sha512",
+        "sendgrid.nuspec"
+      ]
+    },
     "Stripe.net/25.19.0": {
       "sha512": "TAV4r2A54aweF14nXKBCvXWa1D9dAj1/dyd5KDcde52VY+TV8WknfGlZcbCbDHUOW/Rw9SMJbTf7KcM4PzAM1w==",
       "type": "package",
@@ -12966,6 +12998,7 @@
       "Microsoft.AspNetCore.Razor.Design >= 2.2.0",
       "Microsoft.NETCore.App >= 2.2.0",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 2.2.3",
+      "Sendgrid >= 9.11.0",
       "Stripe.net >= 25.19.0"
     ]
   },
@@ -13030,6 +13063,10 @@
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
             "target": "Package",
             "version": "[2.2.3, )"
+          },
+          "Sendgrid": {
+            "target": "Package",
+            "version": "[9.11.0, )"
           },
           "Stripe.net": {
             "target": "Package",
