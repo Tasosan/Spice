@@ -102,3 +102,5 @@ C:\Projects\Spice\Spice\obj\Debug\netcoreapp2.2\Spice.csproj.CopyComplete
 C:\Projects\Spice\Spice\obj\Debug\netcoreapp2.2\Razor\Areas\Customer\Views\Order\Confirm.g.cshtml.cs
 C:\Projects\Spice\Spice\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_IndividualOrderDetails.g.cshtml.cs
 C:\Projects\Spice\Spice\obj\Debug\netcoreapp2.2\Razor\Areas\Customer\Views\Order\OrderHistory.g.cshtml.cs
+C:\Projects\Spice\Spice\obj\Debug\netcoreapp2.2\Razor\Areas\Customer\Views\Order\_OrderStatus.g.cshtml.cs
+C:\Projects\Spice\Spice\obj\Debug\netcoreapp2.2\Razor\Areas\Customer\Views\Order\ManageOrder.g.cshtml.cs

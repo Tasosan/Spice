@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Security.Claims;
+using System.Text;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
@@ -117,6 +118,90 @@ namespace Spice.Areas.Customer.Controllers
             return View(orderDetailsVM.OrderBy(o => o.OrderHeader.PickUpTime).ToList());
         }
 
+        [Authorize]
+        public async Task<IActionResult> OrderPickup(int productPage = 1)
+        {
+            //var claimsIdentity = (ClaimsIdentity)User.Identity;
+            //var claim = claimsIdentity.FindFirst(ClaimTypes.NameIdentifier);
+
+            OrderListViewModel orderListVM = new OrderListViewModel()
+            {
+                Orders = new List<OrderDetailsViewModel>()
+            };
+
+            StringBuilder param = new StringBuilder();
+            param.Append("/Customer/Order/OrderPickup?productPage=:");
+
+            List<OrderHeader> OrderHeaderList = await _db.OrderHeader.Include(o => o.ApplicationUser).Where(u => u.Status == SD.StatusReady).ToListAsync();
+
+            foreach (OrderHeader item in OrderHeaderList)
+            {
+                OrderDetailsViewModel individual = new OrderDetailsViewModel
+                {
+                    OrderHeader = item,
+                    OrderDetails = await _db.OrderDetails.Where(o => o.OrderId == item.Id).ToListAsync()
+                };
+                orderListVM.Orders.Add(individual);
+            }
+
+            var count = orderListVM.Orders.Count;
+            orderListVM.Orders = orderListVM.Orders.OrderByDescending(p => p.OrderHeader.Id)
+                .Skip((productPage - 1) * PageSize)
+                .Take(PageSize).ToList();
+
+            orderListVM.PagingInfo = new PagingInfo
+            {
+                CurrentPage = productPage,
+                ItemsPerPage = PageSize,
+                TotalItem = count,
+                urlParam = param.ToString()
+            };
+
+            return View(orderListVM);
+        }
+
+        [Authorize(Roles = SD.KitchenUser + "," + SD.ManagerUser)]
+        public async Task<IActionResult> OrderPrepare(int OrderId)
+        {
+            OrderHeader orderHeader = await _db.OrderHeader.FindAsync(OrderId);
+            orderHeader.Status = SD.StatusInProcess;
+            await _db.SaveChangesAsync();
+            return RedirectToAction("ManageOrder", "Order");
+        }
+
+
+        [Authorize(Roles = SD.KitchenUser + "," + SD.ManagerUser)]
+        public async Task<IActionResult> OrderReady(int OrderId)
+        {
+            OrderHeader orderHeader = await _db.OrderHeader.FindAsync(OrderId);
+            orderHeader.Status = SD.StatusReady;
+            await _db.SaveChangesAsync();
+
+            //Email logic to notify user that order is ready for pickup
+
+
+            return RedirectToAction("ManageOrder", "Order");
+        }
+
+        [Authorize(Roles = SD.FrontDeskUser + "," + SD.ManagerUser)]
+        [HttpPost]
+        [ActionName("OrderPickup")]
+        public async Task<IActionResult> OrderPickupPost(int orderId)
+        {
+            OrderHeader orderHeader = await _db.OrderHeader.FindAsync(orderId);
+            orderHeader.Status = SD.StatusCompleted;
+            await _db.SaveChangesAsync();
+            return RedirectToAction("OrderPickup", "Order");
+        }
+
+        [Authorize(Roles = SD.KitchenUser + "," + SD.ManagerUser)]
+        public async Task<IActionResult> OrderCancel(int OrderId)
+        {
+            OrderHeader orderHeader = await _db.OrderHeader.FindAsync(OrderId);
+            orderHeader.Status = SD.StatusCancelled;
+            await _db.SaveChangesAsync();
+            return RedirectToAction("ManageOrder", "Order");
+        }
 
         public async Task<IActionResult> GetOrderDetails(int Id)
         {
